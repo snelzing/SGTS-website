@@ -11,6 +11,7 @@ body {
   background: #000;
   color: #d8b4fe;
   min-height: 100vh;
+  font-size: 1.1rem;
 }
 
 a {
@@ -24,22 +25,22 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
   border-bottom: 1px solid #333;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
 }
 
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .social-links a {
-  font-size: 0.9rem;
+  font-size: 1.8rem;
   opacity: 0.8;
 }
 
@@ -69,12 +70,12 @@ a {
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .tagline {
   margin-top: 1rem;
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   line-height: 1.6;
   opacity: 0.9;
 }
@@ -90,7 +91,7 @@ a {
 .services h2 {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .service-grid {
@@ -120,11 +121,11 @@ a {
 }
 
 .service-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 .service-card p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   opacity: 0.8;
   line-height: 1.4;
 }
@@ -138,7 +139,7 @@ a {
 
 .accomplishments h2 {
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .stats-grid {
@@ -155,12 +156,12 @@ a {
 }
 
 .stat-value {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 .stat-title {
-  font-size: 0.85rem;
+  font-size: 1rem;
   opacity: 0.7;
   margin-top: 0.25rem;
 }
@@ -178,14 +179,14 @@ a {
 
 .contact-form h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .contact-form label {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   opacity: 0.8;
 }
 
@@ -197,7 +198,7 @@ a {
   background: #111;
   color: #fff;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .contact-form button {
@@ -207,7 +208,7 @@ a {
   background: #d8b4fe;
   color: #000;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -218,7 +219,7 @@ a {
 .thank-you {
   text-align: center;
   padding: 3rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 /* ========== Service Detail Page ========== */
@@ -236,7 +237,7 @@ a {
 
 .back-link {
   align-self: flex-start;
-  font-size: 0.9rem;
+  font-size: 1rem;
   opacity: 0.7;
 }
 
@@ -249,7 +250,7 @@ a {
 }
 
 .service-detail h1 {
-  font-size: 1.75rem;
+  font-size: 2.2rem;
 }
 
 .service-description {
@@ -262,4 +263,18 @@ a {
   font-style: italic;
   opacity: 0.5;
   line-height: 1.5;
+}
+
+/* ========== Mobile ========== */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
 }
